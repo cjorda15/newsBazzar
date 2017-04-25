@@ -1,0 +1,51 @@
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.search-option-container{
+  padding: 10px;
+}
+
+.search-container{
+  display: flex;
+  max-width: 500px;
+}
+
+.submit-btn{
+  width:20%;
+  background-color: aliceblue;
+  border: 1px solid #fff;
+}
+
+.input-container{
+  width: 80%;
+}
+
+h3{
+color:#fff;
+text-shadow: #f60  1px 1px 1px;
+
+}
+
+.search-input{
+  width: 80%;
+  height: 35px;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.search-options{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding-top: 5px;
+
+}
+
+.search-options-text{
+  padding-left: 5px;
+}

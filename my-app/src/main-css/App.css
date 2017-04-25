@@ -1,0 +1,30 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+html{
+  background-color: #000
+}
+
+body {
+  background-image: url('../icons/7a0c8518-ceb0-43e6-b0d5-b8bfec74e2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:#fff;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  max-width: 1400px;
+}
+
+body.fixed-nav nav {
+  position: fixed;
+  box-shadow:0 5px 0 rgba(0,0,0,0.1);
+}
+
+
+@import 'Header.css';
+@import 'Main.css';
+@import 'Rentals.css';

@@ -1,0 +1,97 @@
+
+.header-nav{
+padding: 5px;
+}
+
+.nav-link-container{
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fff
+}
+.nav-link {
+  text-decoration: none;
+  color:#AFAFAF;
+  font-weight: 100;
+  font-size:19px
+}
+
+.nav-link:hover{
+  color:#000;
+}
+
+.nav-list-item {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 19px;
+  width: 120px;
+}
+
+.home-icon{
+  background-image: url("../icons/Home-64.png");
+}
+
+.contact-icon{
+  background-image: url("../icons/Phone-50.png");
+}
+
+.about-me-icon{
+  background-image: url("../icons/Sort-Down-50.png")
+}
+
+
+.nav-list-home:hover .home-icon{
+  background-image: url("../icons/Home-hover-48.png");
+  transition: all 1s;
+}
+
+.nav-list-contact:hover .contact-icon{
+  background-image: url("../icons/Phone Filled-hover-50.png");
+  transition: all 1s;
+
+}
+
+.nav-list-about-me:hover .about-me-icon{
+  background-image: url("../icons/Sort-Down-Filled-50.png");
+  transition: all 1s;
+
+}
+
+.nav-icon{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+
+.search-options-text{
+  color:#fff;
+  text-shadow: #f22223 0px 3px 3px;
+}
+
+.header-title{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.header-title h1, .header-title h3{
+  font-weight: 100;
+  text-shadow: #f22223 0px 3px 3px;
+}
+
+h1 span, h3 span {
+  color: #fff
+}
+
+@media query(max-width:450px){
+
+.nav-link-container{
+  justify-content: space-between;
+  background-color: black;
+}
+
+}
