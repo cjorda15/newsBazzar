@@ -1,15 +1,21 @@
 import React from 'react'
 
-function RentalCards({article,title,description,urlToImage}){
+function RentalCards({article,title,description,image}){
   return(
     <article className = "rental-cards">
-      <div className = "top-of-card">
-      {title}
+     <div
+     className = "top-of-card"
+     style={{ backgroundImage: `url(${image})` }}
+      >
+      <div className="card-content">
+        {title}
       </div>
-      <div className = "middle-of-card">
-      {description}
       </div>
-      <img className ="bottom-of-card" src= {urlToImage}/>
+      <a className="middle-of-card-link" src="http://www.google.com">Link to article</a>
+      <div className = "bottom-card">
+        <div className="bottom-card-content">{description}
+        </div>
+      </div>
     </article>
   )
 }
@@ -22,16 +28,16 @@ function Rentals({data}){
     {
 
       Object.keys(data.articles).map((section,index) =>{
-        console.log(data.articles[section])
         let article = data.articles[section]
-        console.log(article)
           return (
 
             <RentalCards
+            index={index}
+            key={index}
              title= {article.title}
              description = {article.description}
              image = {article.urlToImage}
-             file  = {article}
+             url  = {article.url}
               />
           )
       })
