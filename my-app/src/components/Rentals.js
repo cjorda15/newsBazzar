@@ -8,7 +8,7 @@ function RentalCards({article,title,description,image}){
      style={{ backgroundImage: `url(${image})` }}
       >
       <div className="card-content">
-        {title}
+        <span className="card-background-container">{title}</span>
       </div>
       </div>
       <a className="middle-of-card-link" src="http://www.google.com">Link to article</a>
