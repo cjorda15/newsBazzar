@@ -1,6 +1,11 @@
 import React from 'react'
 
 function RentalCards({article,title,description,image}){
+
+  function  handleClick(){
+    console.log("!!!")
+  }
+
   return(
     <article className = "rental-cards">
      <div
@@ -11,7 +16,13 @@ function RentalCards({article,title,description,image}){
         <span className="card-background-container">{title}</span>
       </div>
       </div>
-      <a className="middle-of-card-link" src="http://www.google.com">Link to article</a>
+      <div className = "middle-of-card">
+        <a className = "middle-of-card-link" href="http://www.google.com">Link to article</a>
+        <div className = "middle-of-card-button-container">
+          <button onClick={()=>handleClick()} className= "middle-of-card-button commentBtn">10</button>
+          <button className= "middle-of-card-button likeBtn">3</button>
+        </div>
+      </div>
       <div className = "bottom-card">
         <div className="bottom-card-content">{description}
         </div>

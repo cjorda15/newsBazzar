@@ -18,6 +18,8 @@ function Header(){
           <li className = "nav-list-about-me nav-list-item">
           <div className ="about-me-icon nav-icon">
           </div>
+          <button onClick={()=>{console.log("!!")}} className= "middle-of-card-button likeBtn">3</button>
+
             <a className = "nav-link" href="#">About me</a>
           </li>
         </ul>
