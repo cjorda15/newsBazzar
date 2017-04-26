@@ -22,10 +22,6 @@ function Header(){
           </li>
         </ul>
       </nav>
-      <div className= "header-title">
-        <h1>Jordan & <span>Jordan</span></h1>
-        <h3><span>Your renting</span> headaches are over</h3>
-      </div>
     </header>
   )
 }

@@ -13,7 +13,7 @@ class App extends Component {
   constructor(){
     super()
     this.state ={
-      data: {articles:"23"}
+      data: {articles:""}
     }
   }
 

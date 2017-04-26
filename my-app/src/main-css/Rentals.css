@@ -1,6 +1,6 @@
 .rentals-container{
   flex-wrap: wrap;
-  justify-content: center;*
+  justify-content: space-around;
   padding:15px;
   display: flex;
 }
@@ -9,24 +9,88 @@
 
 .rental-cards{
   display: flex;
+  z-index: -1;
   flex-direction: column;
-  height: 300px;
-  width:200px;
+  height: 425px;
+  width:300px;
   margin-bottom: 10px;
   padding: 10px;
   opacity: 0.9;
+  box-shadow: #000 1px 1px 1px 1px;
+  border-radius: 20px;
+
+}
+
+.card-content{
+  width:95%;
+  height: 85%;
+  color: #fff;
+  text-shadow: #000 2px 2px 1px;
+  font-size:14px;
+}
+
+.bottom-card-content{
+  color:#000
+}
+
+.top-of-card, .bottom-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  font-weight: 100;
+  flex:1;
 }
 
 .top-of-card{
-  background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+}
+
+.bottom-card{
   flex: 1;
+  font-size:20px;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 .middle-of-card{
-  background-color: yellow;
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.bottom-of-card{
-  flex: 1;
+.middle-of-card-image{
+  height:100%;
+  background-size: 31%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.middle-of-card-link{
+  text-decoration: underline;
+  font-weight: 300;
+  color: #fff;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.middle-of-card-link:hover{
+  color:#fff;
+}
+
+a:hover{
+  color:yellow;
+}
+
+
+@media (max-width:630px){
+
+  /*.rental-cards{
+    width:95%;
+  }*/
+
+  /*.top-of-card{
+    background-size: contain;
+  }*/
 }
