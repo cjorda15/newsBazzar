@@ -36,19 +36,7 @@ export default class Main extends Component{
             <button onClick={()=>{this.getApiData()}} className ="submit-btn">submit</button>
               <ListSource handleOptions={this.handleOptions.bind(this)}/>
         </div>
-          <div className="search-by-container">
-            <div className= "search-by-content">
-              <p>popular</p>
-              <input type= "checkbox"
-              className="search-by-input"/>
 
-            <div className= "search-by-content">
-              <p>latest</p>
-              <input type= "checkbox"
-              className="search-by-input"/>
-            </div>
-          </div>
-          </div>
       </main>
     )
   }
