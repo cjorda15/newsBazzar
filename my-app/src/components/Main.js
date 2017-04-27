@@ -27,7 +27,7 @@ export default class Main extends Component{
 
   render(){
     return(
-      <main className = "main-container">
+      <main className = "main-container" onClick={()=>console.log("RE")}>
       <div className= "header-title">
         <h1>Jordan & <span>Jordan</span></h1>
         <h3>Your News headaches are over</h3>

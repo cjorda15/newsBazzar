@@ -28,7 +28,6 @@ class App extends Component {
   render() {
     return (
       <StickyContainer>
-
       <div className="App">
         <Sticky topOffset={0}>
           <Header />

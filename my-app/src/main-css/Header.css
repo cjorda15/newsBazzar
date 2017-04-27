@@ -2,6 +2,9 @@
 padding: 5px;
 }
 
+.header-container{
+  z-index: 5;
+}
 .nav-link-container{
   display: flex;
   justify-content: flex-start;
@@ -80,9 +83,9 @@ padding: 5px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: lightblue;
   margin-bottom: 10px;
-  opacity: 0.9;
+  opacity: 0.8;
   border-radius: 5px;
   padding: 5px;
 }

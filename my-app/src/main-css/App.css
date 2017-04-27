@@ -21,6 +21,9 @@ body.fixed-nav nav {
   box-shadow:0 5px 0 rgba(0,0,0,0.1);
 }
 
+.sticky{
+  z-index: 10;
+}
 
 @import 'Header.css';
 @import 'Main.css';
